@@ -164,17 +164,3 @@ describe "./lib/game_status.rb" do
     end
   end
 end
-
-def draw?(board)
-  if !won?(board) && full?(board)
-  else
-    false
-  end
-end
-
-def over?(board)
-  if won?(board) || full?(board) || draw?(board)
-  else
-    false
-  end
-end
