@@ -55,8 +55,6 @@ def over?(board)
   end
 end
 
-def winner?(board)
-  if won?(board)
-      board[won?(board)[2]]
-  end
+def winner(board)
+  won?(board) && board[won?(board)[2]]
 end
